@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <title>MAESTRO: Study practice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="MAESTRO navigation">
+      <div class="brand-lockup">
+        <div class="column-logo" aria-label="MAESTRO column mark">
+          <svg viewBox="0 0 52 58" role="img" aria-hidden="true">
+            <path d="M4 4h44v5H4z" fill="currentColor"/>
+            <path d="M7 16h38v4H7c0-3 1-4 4-4h28c3 0 4 1 4 4H9c-2 0-3-1-3-2 0-1 0-2 1-2Z" fill="currentColor"/>
+            <path d="M9 17c-5 0-7-3-6-6 1-3 5-4 8-2 2 1 3 3 3 6h-4c0-2-1-3-3-3-1 0-2 1-2 2 0 1 1 2 4 2Zm34 0c5 0 7-3 6-6-1-3-5-4-8-2-2 1-3 3-3 6h4c0-2-1-3-3-3-1 0-2 1-2 2 0 1 1 2 4 2Z" fill="currentColor"/>
+            <path d="M13 20h6v34h-6zM23 20h6v34h-6zM33 20h6v34h-6z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="brand-name"><strong>maestro</strong></div>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar" aria-hidden="true">ES</div>
+        <div><strong>Eric</strong><small>Grade 10</small></div>
+      </div>
+
+      <div class="sidebar-course">
+        <label for="sidebar-syllabus">CURRENT SYLLABUS</label>
+        <select id="sidebar-syllabus" aria-label="Switch current syllabus">
+          <option value="biology">Biology</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="history">World history</option>
+        </select>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-caption">STUDY</div>
+        <button class="nav-item active" data-view="overview" aria-label="Open overview" aria-current="page"><span class="nav-index">I</span><span class="nav-item-label">Overview</span></button>
+        <button class="nav-item" data-view="syllabus" aria-label="Open syllabus"><span class="nav-index">II</span><span class="nav-item-label">Syllabus</span></button>
+        <button class="nav-item" data-view="practice" aria-label="Open practice"><span class="nav-index">III</span><span class="nav-item-label">Practice</span></button>
+        <button class="nav-item" data-view="quizzes" aria-label="Open quiz library"><span class="nav-index">IV</span><span class="nav-item-label">Quiz library</span></button>
+        <button class="nav-item" data-view="coverage" aria-label="Open coverage map"><span class="nav-index">V</span><span class="nav-item-label">Coverage map</span></button>
+        <div class="nav-caption nav-caption-spaced">LIBRARY</div>
+        <button class="nav-item" data-view="materials" aria-label="Open materials"><span class="nav-index">VI</span><span class="nav-item-label">Materials</span></button>
+        <button class="nav-item" data-view="settings" aria-label="Open settings"><span class="nav-index">VII</span><span class="nav-item-label">Settings</span></button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="mini-label">STREAK</div>
+        <div class="streak"><span class="streak-mark">IV</span><strong>4 days</strong><small>Keep the chain alive</small></div>
+        <div class="sidebar-rule"></div>
+        <p class="sidebar-note">Small sessions compound. Start with one honest answer.</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <div id="main-loading" class="main-loading hidden" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span id="main-loading-label">Opening classroom</span></div>
+      <header class="topbar">
+        <div><div class="eyebrow" id="breadcrumb">OVERVIEW / MONDAY, SEPTEMBER 7</div><h1 id="page-title" aria-live="polite">Good afternoon, Eric.</h1></div>
+        <div class="top-actions">
+          <label class="quick-syllabus"><span>SYLLABUS</span><select id="quick-syllabus" aria-label="Switch syllabus from the top bar"><option value="biology">Biology</option><option value="chemistry">Chemistry</option><option value="history">World history</option></select></label>
+          <div class="xp-ledger"><span>XP</span><strong id="xp-value">680</strong></div>
+          <button class="top-utility" data-view="settings" aria-label="Open settings">Settings</button>
+          <button class="avatar small" data-view="settings" aria-label="Open profile and settings">ES</button>
+        </div>
+      </header>
+
+      <section id="overview-view" class="view active-view" aria-labelledby="page-title">
+        <div class="hero-card panel">
+          <div class="hero-copy">
+            <div class="chapter-label"><span>OVERVIEW</span><i></i><span id="hero-subject">BIOLOGY</span></div>
+            <h2>Know what you can recall<br /><em>before test day.</em></h2>
+            <p id="hero-description">Practice from your own material, find the gaps, and decide what to review next.</p>
+            <button class="primary-btn" data-action="start-practice" data-topic="Osmosis &amp; diffusion"><span id="primary-session-label">Review osmosis &amp; diffusion</span> <span>↗</span></button>
+          </div>
+          <div class="hero-illustration" aria-label="Illustration of an open book and study notes">
+            <svg viewBox="0 0 270 210" role="img" aria-hidden="true">
+              <path class="illustration-line" d="M35 157c33-22 64-22 100 0 36-22 67-22 100 0"/>
+              <path class="illustration-line" d="M35 157v20c33-19 64-19 100 2 36-21 67-21 100-2v-20"/>
+              <path class="illustration-line thin" d="M135 157v22"/>
+              <path class="illustration-line" d="M135 27v59M103 57h64M111 38l48 48M159 38l-48 48"/>
+              <circle class="illustration-dot" cx="135" cy="27" r="4"/><circle class="illustration-dot" cx="103" cy="57" r="3"/><circle class="illustration-dot" cx="167" cy="57" r="3"/><circle class="illustration-dot" cx="111" cy="86" r="3"/><circle class="illustration-dot" cx="159" cy="86" r="3"/>
+              <path class="illustration-line thin" d="M57 119h36M177 119h36M73 101l-13-12M197 101l13-12"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="section-heading"><div><span class="eyebrow">YOUR MATERIAL</span><h2>Upload what you are studying</h2></div><button class="text-btn" data-action="open-upload">+ Add material</button></div>
+        <section class="upload-card panel" id="upload-panel"><div class="upload-ornament" aria-hidden="true">+</div><div><h3 id="upload-title">Upload your notes, slides, or reading</h3><p id="upload-subtitle">Choose a .txt, .md, .pdf, or .docx file, or drop it here.</p><div id="upload-loading" class="inline-loading hidden" role="status"><span class="spinner small-spinner" aria-hidden="true"></span><span id="upload-loading-label">Reading material...</span></div></div><label class="secondary-btn file-label">Choose files<input id="file-input" type="file" accept=".txt,.md,.text,.pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple /></label></section>
+        <div id="upload-preview" class="upload-preview hidden" aria-live="polite"><div class="preview-heading"><span class="eyebrow">MATERIAL PREVIEW</span><button id="clear-material" class="text-btn" type="button">Clear</button></div><p id="preview-text"></p></div>
+        <section id="reviewer-area" class="reviewer-area panel hidden" aria-live="polite"><div class="reviewer-toolbar"><div><span class="eyebrow">REVIEWER</span><h3>Turn this material into a review</h3><p id="reviewer-status">Upload study material to begin.</p></div><button id="generate-reviewer" class="primary-btn" type="button"><span class="button-label">Generate reviewer</span><span>↗</span></button></div><div id="reviewer-output" class="reviewer-output hidden"></div></section>
+        <div class="material-row" id="material-row"><div class="material-index">01</div><div class="material-icon" aria-hidden="true">B</div><div><strong id="material-name">Biology: Cell transport notes</strong><small id="material-meta">Added today: 3 topics detected</small></div><span class="status-mark" aria-hidden="true"></span><span class="material-status" id="material-status">Ready to review</span><button class="kebab" data-action="open-materials" aria-label="Open material library">OPEN</button></div>
+        <section class="lesson-strip" aria-label="Classrooms"><div><span class="eyebrow">CLASSROOMS</span><h3>Pick up where you left off</h3></div><div class="lesson-tabs"><button class="lesson-tab active" data-lesson="biology"><span class="lesson-mark">B</span><span><strong>Biology</strong><small>Cell transport</small></span></button><button class="lesson-tab" data-lesson="coverage"><span class="lesson-mark">C</span><span><strong>Coverage gaps</strong><small>1 topic waiting</small></span></button></div></section>
+
+        <div class="section-heading compact"><div><span class="eyebrow">WHAT NEEDS REVIEW</span><h2>Your review plan</h2></div><button class="text-btn" data-view-target="coverage">View full map ↗</button></div>
+        <section class="ledger panel">
+          <div class="ledger-head"><span>TOPIC</span><span>STATE</span><span>ACCURACY</span><span>NEXT REVIEW</span><span></span></div>
+          <div class="ledger-row priority-row"><div class="topic-name"><span class="topic-stamp">A</span><strong>Osmosis &amp; diffusion</strong></div><span class="topic-status needs">Needs review</span><strong>38%</strong><span class="next-review">Today: priority</span><button class="row-action" data-action="start-practice" data-topic="Osmosis &amp; diffusion">Review ↗</button></div>
+          <div class="ledger-row"><div class="topic-name"><span class="topic-stamp">B</span><strong>Cell membrane structure</strong></div><span class="topic-status improving">Improving</span><strong>67%</strong><span class="next-review">Tomorrow</span><button class="row-action" data-action="start-practice" data-topic="Cell membrane structure">Continue ↗</button></div>
+          <div class="ledger-row"><div class="topic-name"><span class="topic-stamp">C</span><strong>Active transport</strong></div><span class="topic-status steady">Steady</span><strong>86%</strong><span class="next-review">In 4 days</span><button class="row-action" data-action="start-practice" data-topic="Active transport">Quick check ↗</button></div>
+        </section>
+      </section>
+
+      <section id="syllabus-view" class="view" aria-labelledby="syllabus-heading">
+        <div class="section-heading page-heading"><div><span class="eyebrow">SYLLABUS</span><h2 id="syllabus-heading">Biology syllabus</h2><p id="syllabus-subtitle" class="section-subtitle">A clear path through your current material.</p></div><button class="secondary-btn" data-action="open-upload">Add material ↗</button></div>
+        <section class="syllabus-summary panel"><div><span class="eyebrow">CURRENT COURSE</span><h3 id="syllabus-current-name">Biology</h3><p id="syllabus-current-description">Cell transport and the movement of substances across membranes.</p></div><div class="syllabus-progress-block"><strong id="syllabus-progress">72%</strong><span>reviewed</span><div class="progress"><span id="syllabus-progress-bar" style="width:72%"></span></div></div></section>
+        <div class="section-heading compact"><div><span class="eyebrow">CHAPTERS</span><h2>Move through the material</h2></div><span class="section-note">Select a chapter to practice</span></div>
+        <section id="syllabus-chapters" class="chapter-list"></section>
+      </section>
+
+      <section id="practice-view" class="view" aria-labelledby="practice-title">
+        <div class="practice-header">
+          <div class="practice-heading">
+            <div class="practice-topline"><button class="back-btn" data-action="exit-practice">← Overview</button><span class="eyebrow">PRACTICE SESSION</span></div>
+            <h2 id="practice-title">Cell transport check-in</h2>
+            <p id="session-status">Your progress saves in this browser.</p>
+          </div>
+          <div class="practice-controls">
+            <label for="topic-select">Topic</label>
+            <select id="topic-select">
+              <option value="Osmosis &amp; diffusion">Osmosis &amp; diffusion</option>
+              <option value="Cell membrane structure">Cell membrane structure</option>
+              <option value="Active transport">Active transport</option>
+              <option value="Coverage gap">Coverage gaps</option>
+              <option value="all">All topics</option>
+            </select>
+            <div class="session-progress"><span id="question-count">1 / 5</span><div class="progress"><span id="session-progress-bar" style="width: 20%"></span></div></div>
+          </div>
+        </div>
+        <div class="practice-layout"><section class="question-card panel"><div class="question-meta"><span class="chapter-label"><span>QUESTION</span><i></i><span id="question-topic">Osmosis &amp; diffusion</span></span><span class="question-number" id="question-number">QUESTION 01</span></div><h2 id="question-text">What happens to a plant cell when it is placed in a hypotonic solution?</h2><div id="confidence-wrap" class="confidence-wrap"><div class="confidence-label"><label for="confidence-slider">How confident are you?</label><strong id="confidence-value" aria-live="polite">3: Unsure</strong></div><input id="confidence-slider" type="range" min="1" max="5" value="3" aria-describedby="confidence-value" /></div><div id="generated-answer-area" class="generated-answer-area hidden"><label for="generated-answer">Write what you remember before revealing the answer.</label><textarea id="generated-answer" rows="5" placeholder="Write a short answer in your own words..."></textarea></div><div id="answer-options" class="answer-options" aria-label="Answer options"></div><div class="question-actions"><button id="submit-answer" class="primary-btn">Check answer <span>↗</span></button><button id="flag-question" class="ghost-btn">Flag for review</button></div><div id="feedback" class="feedback hidden" role="status"></div></section><aside class="source-card panel"><div class="source-heading"><span class="source-index">FROM YOUR NOTES</span><span class="source-rule"></span></div><h3 id="source-title">Cell transport notes</h3><p id="source-hint" class="source-hint">Recall first. You can reveal the source when you need a hint.</p><blockquote id="source-excerpt" class="hidden">Water moves across a selectively permeable membrane from an area of lower solute concentration to higher solute concentration.</blockquote><button id="reveal-source" class="text-btn" type="button" aria-expanded="false">Reveal source excerpt ↗</button><button class="text-btn" data-action="open-materials">Open material library ↗</button><div class="confidence-callout"><span class="callout-mark">C</span><div><strong>Compare confidence with accuracy.</strong><p>Your answer and your confidence help decide what to review next.</p></div></div></aside></div>
+      </section>
+
+      <section id="quizzes-view" class="view" aria-labelledby="quizzes-heading">
+        <div class="section-heading page-heading"><div><span class="eyebrow">QUIZ LIBRARY</span><h2 id="quizzes-heading">Choose a way to practice</h2><p class="section-subtitle">Short sessions for recall, gaps, or confidence.</p></div><label class="filter-control"><span>SHOW</span><select id="quiz-filter" aria-label="Filter quiz library"><option value="all">All quizzes</option><option value="priority">Needs review</option><option value="quick">Quick checks</option></select></label></div>
+        <section id="quiz-list" class="quiz-grid"></section>
+      </section>
+
+      <section id="coverage-view" class="view" aria-labelledby="coverage-heading"><div class="section-heading coverage-heading"><div><span class="eyebrow">COVERAGE MAP</span><h2 id="coverage-heading">You have tested 72% of this material.</h2><p class="section-subtitle">Review the topics that need another pass.</p></div><button class="secondary-btn" data-action="start-practice" data-topic="Coverage gap">Practice gaps ↗</button></div><section class="coverage-summary panel"><div class="coverage-stat"><strong>72%</strong><span>tested</span></div><div class="coverage-stat"><strong>03</strong><span>topics found</span></div><div class="coverage-stat warning"><strong>01</strong><span>not tested</span></div><div class="coverage-bar-wrap"><div class="coverage-bar"><span style="width:72%"></span></div><div class="coverage-bar-labels"><span>Tested</span><span>Not tested</span></div></div></section><section class="coverage-list panel"><div class="list-header"><span>TOPIC</span><span>READINESS</span><span>ACCURACY</span><span>NEXT REVIEW</span></div><div class="coverage-row"><div><span class="topic-stamp">A</span><strong>Osmosis &amp; diffusion</strong></div><span class="topic-status needs">Needs review</span><strong>38%</strong><button class="small-action" data-action="start-practice" data-topic="Osmosis &amp; diffusion">Review now ↗</button></div><div class="coverage-row"><div><span class="topic-stamp">B</span><strong>Cell membrane structure</strong></div><span class="topic-status improving">Improving</span><strong>67%</strong><button class="small-action" data-action="start-practice" data-topic="Cell membrane structure">Review tomorrow ↗</button></div><div class="coverage-row"><div><span class="topic-stamp">C</span><strong>Active transport</strong></div><span class="topic-status steady">Steady</span><strong>86%</strong><button class="small-action" data-action="start-practice" data-topic="Active transport">Review in 4 days ↗</button></div><div class="coverage-row gap-row"><div><span class="topic-stamp muted">?</span><strong>ATP energy coupling</strong></div><span class="topic-status gap">Not tested yet</span><span class="muted-text">:</span><button class="small-action" data-action="start-practice" data-topic="Coverage gap">Add questions ↗</button></div></section></section>
+
+      <section id="materials-view" class="view" aria-labelledby="materials-heading">
+        <div class="section-heading page-heading"><div><span class="eyebrow">MATERIALS</span><h2 id="materials-heading">Your study shelf</h2><p class="section-subtitle">Keep the source material close to the questions it creates.</p></div><button class="primary-btn" data-action="open-upload"><span>Add material</span><span>↗</span></button></div>
+        <section class="material-library panel"><div class="library-toolbar"><div><span class="eyebrow">LOCAL LIBRARY</span><h3>Files in this browser</h3></div><span class="section-note">Nothing leaves this device unless you use the optional AI reviewer.</span></div><div id="material-library-list"></div></section>
+        <section class="privacy-note panel"><span class="callout-mark">P</span><div><strong>Privacy by default.</strong><p>Text files are read locally. The optional reviewer sends only the text you choose to the app's server function, which can call your own official provider key.</p></div></section>
+      </section>
+
+      <section id="settings-view" class="view" aria-labelledby="settings-heading">
+        <div class="section-heading page-heading"><div><span class="eyebrow">SETTINGS</span><h2 id="settings-heading">Make studying fit you</h2><p class="section-subtitle">These preferences stay in this browser.</p></div></div>
+        <section class="settings-panel panel"><div class="settings-group"><span class="eyebrow">READING</span><h3>Comfort and focus</h3><button class="setting-row" data-setting="largeText" aria-pressed="false"><span><strong>Larger text</strong><small>Increase the reading size across the app.</small></span><span class="toggle" aria-hidden="true"></span></button><button class="setting-row" data-setting="highContrast" aria-pressed="false"><span><strong>High contrast</strong><small>Increase contrast around borders and secondary text.</small></span><span class="toggle" aria-hidden="true"></span></button><button class="setting-row" data-setting="reducedMotion" aria-pressed="false"><span><strong>Reduce motion</strong><small>Keep transitions calm and remove animated movement.</small></span><span class="toggle" aria-hidden="true"></span></button></div><div class="settings-group"><span class="eyebrow">ACCOUNT</span><h3>Local study data</h3><div class="setting-info"><strong>Progress is stored on this device.</strong><p>Resetting removes saved session position and returns the prototype to its starting state.</p><button id="reset-progress" class="secondary-btn" type="button">Reset local progress</button></div></div><div class="settings-group"><span class="eyebrow">ABOUT THIS BUILD</span><h3>MAESTRO local prototype</h3><p class="setting-copy">The current build supports text, Markdown, PDF, and DOCX uploads, a local fallback reviewer, optional Gemini generation through the local server, practice feedback, confidence tracking, and coverage planning.</p></div></section>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
